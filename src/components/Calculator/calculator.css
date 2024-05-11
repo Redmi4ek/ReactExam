@@ -1,0 +1,51 @@
+/* Calculator.css */
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Создаем 4 колонки */
+    grid-gap: 10px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    width: 300px; /* Можно настроить ширину */
+    margin-top: 20px;
+  }
+  
+  .display {
+    grid-column: span 4; /* Растягиваем дисплей на все 4 колонки */
+    background-color: #fff;
+    padding: 15px;
+    font-size: 24px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button {
+    background-color: #e0e0e0;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #d0d0d0;
+  }
+  
+  .button.operator {
+    background-color: #f5923e;
+    color: white;
+  }
+  
+  .button.operator:hover {
+    background-color: #f0801a;
+  }
+  
+  .button.double {
+    grid-column: span 2; /* Растягиваем кнопку "0" на 2 колонки */
+  }
+  
